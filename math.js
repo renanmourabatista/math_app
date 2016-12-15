@@ -20,7 +20,15 @@ var math = {
     fatorial: function (){}, 
     combinacao: function() {},
     arranjo: function (){},
-    permutacao: function(){},
+    permutacao: function(num){
+		var result = num;
+		
+		for (var i = num; i > 1;i--) {
+			result = result * (i - 1);			
+		}	
+		
+		return result;
+	}
     numeroPrimo: function(numero){
         var metade =  parseInt(numero / 2);
 
