@@ -66,5 +66,36 @@ var math = {
         return true;
 
     },
-    converteBinario: function(){}
+    converteBinario: function(num){
+		numBinario='';
+		numBinarioOrdenado='';
+		if(num!=0){
+			while(num>=1){
+				
+				
+				
+				if(num%2==0){ 
+					if(num==1){
+						num=0;
+					}
+					else{
+						numBinario+=0;
+						num=num/2;
+					}
+				}	
+				else{ 
+								
+					numBinario+=1;
+					num=parseInt(num/2);
+				}
+			}
+			for(i=numBinario.length-1;i>=0;i--)
+				numBinarioOrdenado+=numBinario[i];
+			
+			return numBinarioOrdenado;	
+		}
+		else{
+			return 0;
+		}
+	}
 }
