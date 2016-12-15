@@ -28,7 +28,21 @@ var math = {
     combinacao: function(n, p) {
     	 return result = fatorial(n) / ((fatorial(p)) * (fatorial(n - p)));
     },
-    arranjo: function (){},
+     arranjo: function (elementos, conjunto){
+        
+        var arranjo = elementos;
+        var elementosOriginal = elementos;
+        var count = 0;
+        
+        while(count < conjunto)
+        {
+       		elementos--;
+            arranjo *= elementos; 
+            count++;
+        }
+          
+        return arranjo / (elementosOriginal - conjunto);
+    },
     permutacao: function(num){
 		var result = num;
 		
