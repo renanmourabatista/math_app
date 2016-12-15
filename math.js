@@ -25,7 +25,9 @@ var math = {
         }
         return fat;
     }, 
-    combinacao: function() {},
+    combinacao: function(n, p) {
+    	 return result = fatorial(n) / ((fatorial(p)) * (fatorial(n - p)));
+    },
     arranjo: function (){},
     permutacao: function(num){
 		var result = num;
