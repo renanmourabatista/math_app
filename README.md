@@ -1,2 +1,2 @@
 # math_app
-um exercicio em equipe para 
+um exercicio em equipe
